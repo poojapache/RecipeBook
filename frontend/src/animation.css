@@ -1,0 +1,62 @@
+
+@keyframes glow
+{
+	from
+	{
+			color:transparent;
+	}
+	to
+	{
+	  color: #FFF;
+	  text-shadow: 1px 1px 2px black, 0 0 25px #FFF, 0 0 5px #FFF;
+	}
+}
+@-webkit-keyframes glow
+{
+	from
+	{
+			color:transparent;
+	}
+	to
+	{
+	  color: #FFF;
+	  text-shadow: 1px 1px 2px black, 0 0 25px #FFF, 0 0 5px #FFF;
+	}
+}
+@-moz-keyframes glow
+{
+	from
+	{
+			color:transparent;
+	}
+	to
+	{
+	  color: #FFF;
+	  text-shadow: 1px 1px 2px black, 0 0 25px #FFF, 0 0 5px #FFF;
+	}
+}
+@-ms-keyframes glow
+{
+	from
+	{
+			color:transparent;
+	}
+	to
+	{
+	  color: #FFF;
+	  text-shadow: 1px 1px 2px black, 0 0 25px #FFF, 0 0 5px #FFF;
+	}
+}
+
+@-o-keyframes glow
+{
+	from
+	{
+			color:transparent;
+	}
+	to
+	{
+	  color: #FFF;
+    text-shadow: 1px 1px 2px black, 0 0 25px #FFF, 0 0 5px #FFF;
+	}
+}

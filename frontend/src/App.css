@@ -1,0 +1,273 @@
+.App {
+  text-align: center;
+}
+
+.video-container
+{
+  overflow: hidden;
+}
+
+.video
+{
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width:auto;
+  height:auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+
+.overlay
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+}
+
+.nav-bar
+{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  right:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logo-container
+{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-btns-container
+{
+  justify-content: flex-end;
+}
+
+.logo
+{
+  color: #FFF;
+  font-family: 'Pacifico', cursive;
+  z-index:5;
+  padding-left: 30px;
+  padding-top:0px;
+  margin-top:0;
+  margin-bottom: 10px;
+}
+.logo span
+{
+  font-size: 50px;
+}
+.logo:hover
+{
+  animation: glow 1.5s forwards;
+  cursor: pointer;
+}
+
+.btn
+{
+  border: #FFF 1px solid;
+  background-color: transparent;
+  padding:15px 40px;
+  font-size: 20px;
+  color: #FFF;
+  border-radius: 10px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  text-shadow: 1px 1px 2px black, 0 0 25px #FFF, 0 0 5px #FFF;
+  box-shadow: 1px 1px 2px black, 0 0 25px #FFF, 0 0 5px #FFF;
+}
+
+.login-btn, .sign-up-btn
+{
+  font-size: 15px;
+  border: none;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.sign-up-btn
+{
+  background-color: #FFF;
+  color: #000;
+}
+
+.primary-text
+{
+  font-family: "Sail", serif;
+  animation: glow 4s forwards;
+  letter-spacing: 5px;
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 80px;
+  height: 100%;
+  margin:0;
+}
+.secondary-text
+{
+  font-family: Arial, Helvetica, sans-serif;
+  animation:none;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+
+.content-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-container
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table
+{
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px black, 0 0 25px #FFF, 0 0 5px #FFF;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  color:#FFF;
+}
+
+.sign-up-container .form-label
+{
+  text-align: left;
+  padding: 10px 25px;
+}
+
+.table tr td input
+{
+  width: 100%;
+}
+
+.table thead tr td
+{
+  text-align: center;
+}
+
+.sign-up-btn-container, .login-container
+{
+  padding:20px;
+}
+
+.sign-up-btn-container .btn, .login-btn-container .btn
+{
+  font-size: 15px;
+}
+
+.profile-navbar
+{
+  position:relative;
+  background-color: #000;
+  color:#FFF;
+}
+
+.greeting
+{
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.greeting-container
+{
+  text-align: left;
+  padding: 0px 30px;
+}
+
+.greeting-container p
+{
+  padding: 0px 20px;
+}
+
+.chef-list-container
+{
+  background-color:#000;
+  color: #FFF;
+  padding: 0 50px;
+  margin-top: 20px;
+}
+
+.chef-list-topbar
+{
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.chef-card-container
+{
+  height: 100px;
+  width: 100px;
+  background-color: #FFF;
+  color: #333; /* Adjust text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  margin: 10px; /* Adds spacing between cards */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Optional box shadow for a nice effect */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+.chef-card-container img
+{
+  height: 50px;
+  width:50px;
+}
+
+.virtuoso-container {
+  width: 100%;
+  height: 600px;
+}
+
+.chef-list-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.chef-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+}
+
+.chef-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
