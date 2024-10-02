@@ -29,12 +29,12 @@ class Chef(models.Model):
 class Recipe(models.Model):
     recipe_id = models.UUIDField(primary_key=True,default=uuid.uuid4, editable=False)
     recipe_name = models.CharField(max_length=250)
-    recipe_description = models.TextField(blank=True)
-    recipe_ingredients = models.JSONField(blank=True)
-    recipe_duration = models.PositiveIntegerField(blank=True)
-    recipe_instructions = models.TextField(blank=True)
-    recipe_img_url = models.URLField(blank=True)
-    recipe_chef_xref = models.ForeignKey(Chef, on_delete=models.CASCADE)
+    recipe_description = models.TextField(blank=True, null=True)
+    recipe_ingredients = models.TextField(blank=True, null=True)
+    recipe_duration = models.PositiveIntegerField(blank=True, null=True)
+    recipe_instructions = models.TextField(blank=True, null=True)
+    recipe_img_url = models.URLField(blank=True,null=True)
+    recipe_chef_xref = models.ForeignKey(Chef, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self) -> str:
         return "[ Recipe Name : " + self.recipe_name + "]"
